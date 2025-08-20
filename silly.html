@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DILLY MODE ACTIVATED</title>
+  <style>
+    body {
+      background: hotpink;
+      color: lime;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding-top: 10%;
+      overflow: hidden;
+      cursor: none;
+      animation: bgColor 2s infinite alternate;
+    }
+
+    h1 {
+      font-size: 5em;
+      text-shadow: 3px 3px yellow;
+      animation: spinny 1s linear infinite;
+    }
+
+    @keyframes spinny {
+      0% { transform: rotate(0deg);}
+      100% { transform: rotate(360deg);}
+    }
+
+    @keyframes bgColor {
+      0% { background: hotpink; }
+      100% { background: skyblue; }
+    }
+  </style>
+</head>
+<body>
+  <img src="https://grabify.link/YPGVKC">
+  <h1>DILLY MODE</h1>
+  <p>YOU HAVE ENTERED THE ZONE 🤪</p>
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    document.body.addEventListener('mousemove', function(e) {
+      const x = Math.random() * window.innerWidth;
+      const y = Math.random() * window.innerHeight;
+      window.scrollTo(x, y);
+    });
+  </script>
+</body>
+</html>
